@@ -1,222 +1,397 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Функциональное питание для котов "Cat Energy"</title>
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+    <title>Кофейные напитки Drink2Go</title>
+    <!-- <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <meta name="theme-color" content="#ffffff"> -->
+    <link rel="preload" href="/fonts/montserratbold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/montserratregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
     <!-- Шапка -->
 
-    <div class="header-intro">
-      <div class="header-intro__container">
-        <header class="main-header no-js">
-          <a class="main-header__logo  main-header__logo--current" href="#">
-            <picture>
-              <source media="(min-width: 1024px)" srcset="img/content/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
-              <img class="main-header__logo-image" src="img/content/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
-            </picture>
-          </a>
-          <nav class="main-nav main-nav--index">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="promo">
-          <div class="promo__wrapper">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
-            <p class="promo__intro">Занялся собой? Займись котом!</p>
-          </div>
-          <div class="promo__block">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-index-tablet.webp 1x, img/content/promo-index-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/content/promo-index-mobile.webp 1x, img/content/promo-index-mobile@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/content/promo-index-tablet.png 1x, img/content/promo-index-tablet@2x.png 2x">
-              <img class="promo__image" src="img/content/promo-index-mobile.png" srcset="img/content/promo-index-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания для котов.">
-            </picture>
-            <a class="button promo__button" href="form.html">Подобрать программу</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <header class="header"></header>
 
-    <!-- Программы -->
 
-    <main class="main-container">
-      <section class="program container">
-        <h2 class="visually-hidden">Программы</h2>
-        <ul class="program__list">
-          <li class="program__item program__item--slim">
-            <h3 class="program__title">Похудение</h3>
-            <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program__catalog-link" href="catalog.html">Каталог slim</a>
-          </li>
-          <li class="program__item program__item--pro">
-            <h3 class="program__title">Набор массы</h3>
-            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program__catalog-link" href="catalog.html">Каталог pro</a>
-          </li>
-        </ul>
-      </section>
+    <main>
 
-      <!-- Преимущества -->
+    <!-- Преимущества -->
 
-      <section class="advantages container">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--healthy">
-            <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages__item advantages__item--simply">
-            <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить  кипятком и готово.</p>
-          </li>
-          <li class="advantages__item advantages__item--tasty">
-            <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantages__item advantages__item--fast">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
-          </li>
-        </ul>
-      </section>
+    <section class="advantages container">
+      <h2 class="advantages__title">Преимущества</h2>
+      <p class="advantages__description">Главные причины выбрать Drink2Go</p>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--speed">
+          <h3 class="advantages__item-title">Скорость</h3>
+          <p class="advantages__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+        </li>
+        <li class="advantages__item advantages__item--comfort">
+          <h3 class="advantages__item-title">Удобство</h3>
+          <p class="advantages__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
+        </li>
+        <li class="advantages__item advantages__item--cheerfulness">
+          <h3 class="advantages__item-title">Бодрость</h3>
+          <p class="advantages__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+        </li>
+        <li class="advantages__item advantages__item--ecology">
+          <h3 class="advantages__item-title">Экологичность</h3>
+          <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
+        </li>
+      </ul>
+    </section>
 
-      <!-- Результат -->
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог</h2>
+      <p class="catalog__description">Каталог кофейных напитков</p>
+      <div class="catalog__content">
 
-      <section class="result">
-        <div class="container result__container">
-          <div class="result__header">
-            <h2 class="result__title">Живой пример</h2>
-          </div>
-          <div class="result__content">
-            <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <div class="result__block">
-              <dl class="result__list">
-                <div class="result__item">
-                  <dt class="result__info">5 кг</dt>
-                  <dd class="result__name">снижение веса</dd>
+        <!-- Фильтр -->
+
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+
+          <fieldset class="filter__fieldset filter__price">
+            <legend class="filter__price-title">Цена</legend>
+            <div class="range">
+              <div class="range-wrapper">
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number"placeholder="0" min="0" name="min-price">
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" placeholder="9000" max="9000" name="max-price">
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
                 </div>
-                <div class="result__item">
-                  <dt class="result__info">60 дней</dt>
-                  <dd class="result__name">затрачено времени</dd>
-                </div>
-              </dl>
-              <div class="result__sum">
-                <span class="result__sum-info">Затраты на питание:</span>
-                <span class="result__price">15 000 РУБ.</span>
               </div>
             </div>
-          </div>
-          <div class="slider">
-            <div class="slider__before">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/cat-before-tablet.webp 1x, img/content/cat-before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/cat-before-mobile.webp 1x, img/content/cat-before-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/cat-before-tablet.png 1x, img/content/cat-before-tablet@2x.png 2x">
-                <img class="slider__before-image slider__image" src="img/content/cat-before-mobile.png" srcset="img/content/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Пухлый кот до смены рациона.">
-              </picture>
-            </div>
-            <div class="slider__range">
-              <button class="slider__range-button" type="button">
-                <span class="visually-hidden">Ползунок для демонстрации котов до и после</span>
-              </button>
-            </div>
-            <div class="slider__after">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/cat-after-tablet.webp 1x, img/content/cat-after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/cat-after-mobile.webp 1x, img/content/cat-after-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/cat-after-tablet.png 1x, img/content/cat-after-tablet@2x.png 2x">
-                <img class="slider__after-image slider__image" src="img/content/cat-after-mobile.png" srcset="img/content/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после смены рациона.">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
+          </fieldset>
 
-      <!-- Адрес -->
+          <fieldset class="filter__fieldset filter__radio">
+            <legend class="filter__radio-title">Наличие молока</legend>
+            <ul class="filter__list filter__radio-list">
+              <li class="filter__radio-item">
+                <label class="filter__radio-label">
+                  <input class="visually-hidden filter__radio-input" type="radio" name="milk" value="no-matter" checked>
+                  <span class="filter__radio-mark"></span>
+                  <span class="filter__radio-text filter__label">Неважно</span>
+                </label>
+              </li>
+              <li class="filter__radio-item">
+                <label class="filter__radio-label">
+                  <input class="visually-hidden filter__radio-input" type="radio" name="milk" value="animals">
+                  <span class="filter__radio-mark"></span>
+                  <span class="filter__radio-text filter__label">Только животное</span>
+                </label>
+              </li>
+              <li class="filter__radio-item">
+                <label class="filter__radio-label">
+                  <input class="visually-hidden filter__radio-input" type="radio" name="milk" value="vegetables">
+                  <span class="filter__radio-mark"></span>
+                  <span class="filter__radio-text filter__label">Только растительное</span>
+                </label>
+              </li>
+              <li class="filter__radio-item">
+                <label class="filter__radio-label">
+                  <input class="visually-hidden filter__radio-input" type="radio" name="milk" value="without-milk" disabled>
+                  <span class="filter__radio-mark"></span>
+                  <span class="filter__radio-text filter__label">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-      <section class="address">
-        <div class="address__wrapper address__wrapper--index">
-          <h2 class="address__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
-          <div class="address__text">
-            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="address__city">Санкт-Петербург</span>
+          <fieldset class="filter__fieldset filter__checkbox">
+            <legend class="filter__checkbox-title">Страна произрастания</legend>
+            <ul class="filter__list filter__checkbox-list">
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="country" value="Brazil" checked>
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-text filter__label">Бразилия</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="country" value="Ethiopia">
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-text filter__label">Эфиопия</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="country" value="Colombia">
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-text filter__label">Колумбия</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="country" value="Costa-Rica">
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-text filter__label">Коста-Рика</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-label">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="country" value="Peru" disabled>
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-text filter__label">Перу</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="filter__button-container">
+            <button class="button filter__button" type="submit">Применить фильтр</button>
+            <button class="button filter__button" type="reset">Сбросить фильтр</button>
           </div>
+
+        </form>
+
+        <!-- Каталог товаров -->
+
+        <div class="products">
+          <div class="producrs__sorting">
+            <span class="producrs__sorting-text">Сортировка:</span>
+            <select class="producrs__sorting-select" aria-label="Сортировка.">
+              <option value="defoult">по умолчанию</option>
+              <option value="popular">сначала популярные</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="cheep">сначала дешевые</option>
+            </select>
+          </div>
+          <ul class="products__list">
+            <li class="products__item">
+              <a class="products__item-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/products/product-1.webp 1x, img/products/product-1@2x.webp 2x">
+                  <img class="products__image" src="img/products/product-1.png" srcset="img/products/product-1@2x.png 2x" width="130" height="188" alt="Кофейный напиток Флэт Уайт">
+                </picture>
+                <h3 class="products__title">Декаф Флэт Уайт</h3>
+                <p class="products__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="products__basket-container">
+                  <span class="products__price">225₽</span>
+                  <button class="products__button button" type="button">В корзину</button>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__item-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/products/product-2.webp 1x, img/products/product-1@2x.webp 2x">
+                  <img class="products__image" src="img/products/product-2.png" srcset="img/products/product-2@2x.png 2x" width="130" height="188" alt="Кофейный напиток Флэт Уайт">
+                </picture>
+                <h3 class="products__title">Декаф Флэт Уайт</h3>
+                <p class="products__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="products__basket-container">
+                  <span class="products__price">225₽</span>
+                  <button class="products__button button" type="button">В корзину</button>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__item-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/products/product-3.webp 1x, img/products/product-3@2x.webp 2x">
+                  <img class="products__image" src="img/products/product-3.png" srcset="img/products/product-3@2x.png 2x" width="130" height="188" alt="Кофейный напиток Флэт Уайт">
+                </picture>
+                <h3 class="products__title">Декаф Флэт Уайт</h3>
+                <p class="products__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="products__basket-container">
+                  <span class="products__price">225₽</span>
+                  <button class="products__button button" type="button">В корзину</button>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__item-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/products/product-4.webp 1x, img/products/product-4@2x.webp 2x">
+                  <img class="products__image" src="img/products/product-4.png" srcset="img/products/product-4@2x.png 2x" width="130" height="188" alt="Кофейный напиток Флэт Уайт">
+                </picture>
+                <h3 class="products__title">Декаф Флэт Уайт</h3>
+                <p class="products__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="products__basket-container">
+                  <span class="products__price">225₽</span>
+                  <button class="products__button button" type="button">В корзину</button>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__item-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/products/product-5.webp 1x, img/products/product-5@2x.webp 2x">
+                  <img class="products__image" src="img/products/product-5.png" srcset="img/products/product-5@2x.png 2x" width="130" height="188" alt="Кофейный напиток Флэт Уайт">
+                </picture>
+                <h3 class="products__title">Декаф Флэт Уайт</h3>
+                <p class="products__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="products__basket-container">
+                  <span class="products__price">225₽</span>
+                  <button class="products__button button" type="button">В корзину</button>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__item-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/products/product-6.webp 1x, img/products/product-6@2x.webp 2x">
+                  <img class="products__image" src="img/products/product-6.png" srcset="img/products/product-6@2x.png 2x" width="130" height="188" alt="Кофейный напиток Флэт Уайт">
+                </picture>
+                <h3 class="products__title">Декаф Флэт Уайт</h3>
+                <p class="products__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                <div class="products__basket-container">
+                  <span class="products__price">225₽</span>
+                  <button class="products__button button" type="button">В корзину</button>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="address__map">
-          <iframe class="address__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470468!2d30.318562733346486!3d59.938716423907195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660939136505!5m2!1sru!2sru"
-            width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
-        </div>
-      </section>
+      </div>
+
+      <!-- Пагинация -->
+
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--button">
+            <a class="pagination__link pagination__link--button" href="#">
+              <span class="pagination__link-text">Назад</span>
+              <!-- <svg class="pagination__svg" width="10" height="10">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg> -->
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">1</a>
+          </li>
+          <li class="pagination__item pagination__item--current">
+            <a class="pagination__link pagination__link--current">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item pagination__item--button">
+            <a class="pagination__link pagination__link--button" href="#">
+              <span class="pagination__link-text">Вперёд</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     </main>
 
     <!-- Футер -->
 
-    <footer class="main-footer">
-      <div class="container main-footer__wrapper">
-        <a class="main-footer__link main-footer__link--current" href="#" aria-label="Переход на главную страницу">
-          <svg class="main-footer__logo" width="128" height="24">
-            <use href="img/sprite.svg#logo-text"></use>
-          </svg>
-        </a>
-        <div class="main-footer__social social">
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="social">
+          <div class="social__container">
+            <a class="social__link--logo" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="170">
+                <img class="social__logo-image" src="img/logo-mobile.svg" width="82" height="36" alt="Логотип Drink to go.">
+              </picture>
+            </a>
+            <span class="social__logo-text">Интернет-магазин кофейных напитков</span>
+          </div>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy во VKontakte" target="_blank">
-                <svg class="social__svg" width="28" height="22">
-                  <use href="img/sprite.svg#social-vkontakte"></use>
+              <a class="social__link" href="#">
+                <svg class="social__svg" width="20" height="20">
+                  <use href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Страница HTML Academy на Youtube" target="_blank">
-                <svg class="social__svg" width="28" height="22">
-                  <use href="img/sprite.svg#social-youtube"></use>
+              <a class="social__link" href="#">
+                <svg class="social__svg" width="20" height="20">
+                  <use href="img/sprite.svg#icon-pinterest"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy" aria-label="Страница HTML Academy в Telegramm" target="_blank">
-                <svg class="social__svg" width="28" height="22">
-                  <use href="img/sprite.svg#social-telegram"></use>
+              <a class="social__link" href="#">
+                <svg class="social__svg" width="20" height="20">
+                  <use href="img/sprite.svg#icon-ok"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" target="_blank">
-            <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__svg" width="27" height="34">
-              <use href="img/sprite.svg#htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__title">Интернет-магазин</h3>
+            <ul class="footer__item-list">
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">Каталог</a>
+              </li>
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">Доставка</a>
+              </li>
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">Способы оплаты</a>
+              </li>
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">Медиа</h3>
+            <ul class="footer__item-list">
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">Блог</a>
+              </li>
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">Информация для СМИ</a>
+              </li>
+              <li class="footer__item-item">
+                <a class="footer__link" href="#">Правовая информация</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__item-list">
+              <li class="footer__item-item footer__item-item--address">
+                <a class="footer__link footer__link-icon footer__link--address" href="https://www.google.ru/maps/place/%D0%BD%D0%B0%D0%B1.+P%D0%B5%D0%BA%D0%B8+%D0%9A%D0%B0%D1%80%D0%BF%D0%BE%D0%B2%D0%BA%D0%B8,+5,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+197022/@59.9681432,30.3143033,17z/data=!3m1!4b1!4m6!3m5!1s0x4696315bcebbd7f3:0xe0d833dfef898281!8m2!3d59.9681405!4d30.316492!16s%2Fg%2F11b8v422s5?hl=ru&coh=164777&entry=tt">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+              </li>
+              <li class="footer__item-item footer__item-item--phone">
+                <a class="footer__link footer__link-icon" href="+7 (999) 999-99-99">+7 (999) 999-99-99</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__copyright-text">Разработано в&nbsp;</span>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__link-text">HTML Academy</span>
+          <svg class="footer__link-svg" width="13" height="16">
+            <use href="img/sprite.svg#logo-academy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

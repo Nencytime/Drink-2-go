@@ -1,26 +1,25 @@
 .button {
-  align-items: center;
-  margin: 0;
-  padding: 10px;
-
-  font-weight: 400;
-  font-family: $ff-oswald;
-  text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: $color-apple;
   border: none;
-  cursor: pointer;
+  border-radius: 4px;
+  color: $color-white;
+  background-color: $color-slate-blue;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 20px;
 
-  &:hover {
-    background-color: $color-limeade;
+  &:hover,
+  &:focus {
+    background-color: $color-medium-purple;
+    cursor: pointer;
   }
 
   &:active {
-    color: rgba($color-white, 30%);
+    background-color: $color-royal-purple;
+    cursor: pointer;
+  }
 
-    background-color: $color-limeade;
+  &:disabled {
+    background-color: $color-silver;
   }
 }
+

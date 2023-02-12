@@ -1,40 +1,73 @@
-.social__list {
+.social {
   display: flex;
-  justify-content: center;
-  margin: 0 0 22px;
-  padding: 20px 0 17px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 
-  list-style-type: none;
-
-  border-top: 1px solid $color-gainsboro;
-  border-bottom: 1px solid $color-gainsboro;
-
-  @media (min-width: $tablet-width) {
-    margin: -8px 0 0 24px;
-    padding: 0;
-
-    border: none;
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
   }
 }
 
-.social__item {
-  padding-right: 24px;
+.social__container {
+  @media (min-width: $desktop-width) {
+    margin-top: -13px;
+    margin-bottom: 45px;
+  }
 }
 
-.social__item:last-of-type {
-  padding-right: 0;
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  gap: 20px;
 }
 
 .social__link {
-  &:hover svg {
-    fill: $color-apple;
+  padding: 15px 10px 5px;
+  border-radius: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -10px;
   }
 
-  &:active svg {
-    fill: rgba($color-apple, 30%);
+  &--logo {
+    padding: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-magnolia;
+  }
+
+  &:active {
+    background-color: rgba($color-slate-blue, 0.25);
+  }
+
+  &:hover svg,
+  &:active svg,
+  &:focus svg {
+    fill: $color-slate-blue;
+  }
+}
+
+.social__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    display: block;
+    width: max-content;
   }
 }
 
 .social__svg {
-  fill: $color-dim-gray;
+  fill: $color-silver;
 }
