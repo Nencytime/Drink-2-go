@@ -1,13 +1,36 @@
+.products {
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
+}
+
 .products__list {
   padding: 0 0 20px;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 58px;
+  }
 }
 
 .products__item {
   padding: 20px;
   background-color: $color-white;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     &:hover,
@@ -27,6 +50,10 @@
 .products__image {
   display: block;
   margin: 20px auto 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .products__title {
@@ -35,11 +62,21 @@
   line-height: 32px;
   padding: 0;
   margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 10px;
+  }
 }
 
 .products__description {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+  }
 }
 
 .products__basket-container {
@@ -48,8 +85,13 @@
   align-items: center;
 
   & .products__button {
-    padding-left: 46px;
+    padding: 9px 20px 9px 46px;
     position: relative;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 7px;
+    }
 
     &::before {
       position: absolute;
@@ -68,12 +110,19 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
+  margin-left: -2px;
 }
 
 .producrs__sorting {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: baseline;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    justify-content: flex-end;
+  }
 }
 
 .producrs__sorting-text {
@@ -90,9 +139,20 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  padding: 4px 14px;
   color: $color-slate-blue;
   background-color: $color-transparent;
-  width: 165px;
+  max-width: 170px;
   margin: 0;
   border-radius: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 2px;
+    margin-right: 3px;
+  }
+
+  &:hover {
+    background-color: $color-magnolia;
+    border-radius: 4px;
+  }
 }

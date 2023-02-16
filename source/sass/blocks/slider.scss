@@ -1,0 +1,150 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.slider__range {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
+    margin-bottom: 18px;
+  }
+}
+
+.slider__values {
+  position: relative;
+  display: flex;
+  gap: 44px;
+
+  @media (min-width: $tablet-width) {
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 48px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 9px;
+    background-color: $color-silver;
+    transform: translate(-50%, -50%);
+  }
+
+  & input {
+    width: 100%;
+    height: 38px;
+    border-radius: 4px;
+    text-align: center;
+    //color: $color-silver;
+    font-family: $ff-montserrat;
+    border: 2px solid $color-medium-purple;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      height: 40px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid $color-royal-purple;
+      outline: none;
+      color: $color-black;
+    }
+
+    &:disabled {
+      border: 2px solid $color-gainsboro;
+      cursor: default;
+      color: $color-silver;
+    }
+  }
+}
+
+.slider {
+  & .noUi-connect {
+    background-color: $color-medium-purple;
+    height: 4px;
+  }
+
+  & .noUi-connects {
+    height: 2px;
+    background-color: $color-gainsboro;
+    width: calc(100% + 24px);
+  }
+
+  & .noUi-base {
+    width: calc(100% - 24px);
+  }
+
+  & .noUi-target {
+    border: none;
+    background-color: $color-transparent;
+    box-shadow: none;
+  }
+
+  & .noUi-handle {
+    border: 2px solid $color-medium-purple;
+    border-radius: 50%;
+    background-color: $color-white;
+    box-shadow: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $color-transparent;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      background-color: rgba($color-slate-blue, 0.25);
+      cursor: pointer;
+      outline: none;
+    }
+
+    &:active::after {
+      background-color: $color-slate-blue;
+    }
+
+    &:disabled {
+      border: 2px solid $color-silver;
+
+      &::after {
+        cursor: default;
+        display: none;
+      }
+    }
+  }
+
+  & .noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    right: -24px;
+    top: -12px;
+
+    @media (min-width: $desktop-width) {
+      //left: 12px;
+    }
+  }
+}

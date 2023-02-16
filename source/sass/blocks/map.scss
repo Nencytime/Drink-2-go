@@ -1,0 +1,42 @@
+.map {
+  height: 420px;
+  position: relative;
+  background-color: $color-gainsboro;
+  background-image: url("../img/background/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 480px;
+    background-image: url("../img/background/map-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 540px;
+    background-image: url("../img/background/map-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/map-desktop@2x.jpg");
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: calc(50% + 30px);
+    transform: translate(-50%, -50%);
+    background-image: url("../img/map-pin.svg");
+    width: 38px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,123 @@
+.menu__list {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 50px;
+
+  background-color: $color-white;
+  border-bottom: 1px solid $color-magnolia;
+
+  .no-js & {
+    position: static;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  .is-open & {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 0;
+    background-color: $color-transparent;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.menu__item {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-top: 1px solid $color-magnolia;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+
+  &:active:not(&--current) {
+    background-color: $color-magnolia;
+  }
+
+  &--current {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        right: -1px;
+        bottom: -31px;
+        left: 0;
+
+        height: 2px;
+
+        background-color: $color-slate-blue;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+}
+
+.menu__link {
+  padding: 20px 20px 22px;
+  color: $color-black;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 21px 32px;
+  }
+
+  &--current {
+    cursor: default;
+
+    @media (min-width: $tablet-width) {
+      color: $color-slate-blue;
+    }
+  }
+
+  &:hover:not(&--current),
+  &:focus:not(&--current) {
+    @media (min-width: $tablet-width) {
+      color: $color-slate-blue;
+    }
+  }
+
+  &:active:not(&--current) {
+    background-color: $color-magnolia;
+  }
+}

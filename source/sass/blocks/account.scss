@@ -1,0 +1,90 @@
+.account__list {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 42px;
+  }
+
+  .no-js & {
+    right: 0;
+  }
+}
+
+.account__item {
+
+  @media (min-width: $desktop-width) {
+    margin-left: 21px;
+  }
+}
+
+.account__label {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.account__link {
+  display: flex;
+  position: relative;
+  color: $color-night-rider;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px 32px 44px;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $desktop-width) {
+      color: $color-slate-blue;
+    }
+
+    & svg {
+      fill: $color-slate-blue;
+    }
+  }
+
+  &:active {
+    background-color: $color-magnolia;
+
+    @media (min-width: $desktop-width) {
+      color: $color-slate-blue;
+    }
+
+    & svg {
+      @media (min-width: $desktop-width) {
+        fill: $color-slate-blue;
+      }
+    }
+  }
+}
+
+.account__svg {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

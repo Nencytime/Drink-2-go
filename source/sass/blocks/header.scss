@@ -1,5 +1,76 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: auto;
+  padding: 10px 20px 9px 13px;
+
+  &.no-js {
+    display: block;
+    padding: 0;
+    padding-top: 9px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+      padding: 22px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 22px 40px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: baseline;
+    padding: 23px 13px 16px;
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 13px 16px 33px;
+  }
+}
+
+.header__logo-container {
+  margin: 0 0 0 7px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 165px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 20px;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+
+  .no-js & {
+    padding: 0 0 10px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+}
+
+.header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }

@@ -1,9 +1,16 @@
 .catalog {
   background-color: $color-white-smoke;
-  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px;
+    padding-bottom: 90px;
+    padding-top: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -24,5 +31,21 @@
   line-height: 36px;
   text-align: center;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
+  }
+}
+
+.catalog__content {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 318px auto;
+  }
 }
