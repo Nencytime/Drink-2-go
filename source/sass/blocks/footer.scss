@@ -7,7 +7,7 @@
     padding-bottom: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 50px;
     padding-bottom: 40px;
   }
@@ -42,9 +42,9 @@
   &::after {
     position: absolute;
     content: "";
-    left: -40px;
+    left: -100%;
     height: 1px;
-    width: 125%;
+    width: 1000%;
     background-color: $color-magnolia;
 
     @media (min-width: $tablet-width) {
@@ -87,9 +87,9 @@
     position: absolute;
     content: "";
     top: 0;
-    left: -40px;
+    left: -100%;
     height: 1px;
-    width: 125%;
+    width: 1000%;
     background-color: $color-magnolia;
 
     @media (min-width: $tablet-width) {
@@ -109,9 +109,9 @@
     position: relative;
     padding-left: 20px;
 
-  @media (min-width: $desktop-width) {
-    margin-top: 11px;
-  }
+    @media (min-width: $desktop-width) {
+      margin-top: 11px;
+    }
 
     &::before {
       position: absolute;
@@ -149,7 +149,7 @@
   font-size: 12px;
   line-height: 16px;
   padding: 10px 15px;
-  width: max-content;
+  width: fit-content;
   margin-left: -15px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -188,7 +188,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-silver;
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 0 15px;
   display: flex;
   align-items: center;
   justify-content: center;

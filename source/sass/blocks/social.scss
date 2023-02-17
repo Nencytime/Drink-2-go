@@ -7,11 +7,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
+    margin-bottom: 25px;
   }
 }
 
@@ -47,14 +48,6 @@
     margin-left: -10px;
   }
 
-  &--logo {
-    padding: 0;
-
-    @media (min-width: $desktop-width) {
-      margin-left: 0;
-    }
-  }
-
   &:hover,
   &:focus {
     background-color: $color-magnolia;
@@ -71,13 +64,36 @@
   }
 }
 
+.social__link-logo {
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
 .social__logo-text {
   display: none;
 
   @media (min-width: $desktop-width) {
     margin-top: 5px;
     display: block;
-    width: max-content;
+    width: fit-content;
+  }
+}
+
+.social__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 170px;
   }
 }
 

@@ -97,7 +97,7 @@
   &--ecology::after {
     content: "";
     position: absolute;
-    top: -12px;
+    top: 0;
     left: 50%;
 
     width: 52px;
@@ -115,6 +115,7 @@
     @media (min-width: $desktop-width) {
       left: 50%;
       transform: translateX(-50%);
+      top: -12px;
     }
   }
 

@@ -12,15 +12,20 @@
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination__item {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   background-color: $color-white;
   border-radius: 4px;
-  margin-left: 20px;
+  margin: 0 20px 10px 0;
   text-align: center;
+
+  &:nth-of-type(5n) {
+    margin-right: 0;
+  }
 
   &--current {
     background-color: $color-transparent;
@@ -31,7 +36,7 @@
   }
 
   &--button {
-    width: max-content;
+    width: fit-content;
     position: relative;
 
     &:hover .pagination__svg,
@@ -82,18 +87,17 @@
   color: $color-slate-blue;
   text-decoration: none;
   padding: 10px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-  }
+  font-size: 16px;
+  line-height: 20px;
 
   &--current {
     color: $color-black;
     font-weight: 600;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: $color-black;
+      cursor: default;
     }
   }
 

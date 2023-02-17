@@ -18,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 58px;
+    padding-bottom: 61px;
   }
 }
 
@@ -139,7 +139,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  padding: 4px 14px;
+  padding: 4px 12px;
   color: $color-slate-blue;
   background-color: $color-transparent;
   max-width: 170px;

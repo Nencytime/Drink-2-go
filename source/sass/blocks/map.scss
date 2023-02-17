@@ -1,5 +1,5 @@
-.map {
-  height: 420px;
+.map__container {
+  min-height: 420px;
   position: relative;
   background-color: $color-gainsboro;
   background-image: url("../img/background/map-mobile.jpg");
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 480px;
+    min-height: 480px;
     background-image: url("../img/background/map-tablet.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 540px;
+    min-height: 540px;
     background-image: url("../img/background/map-desktop.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -33,9 +33,9 @@
     position: absolute;
     content: "";
     top: 50%;
-    left: calc(50% + 30px);
+    left: calc(49% + 30px);
     transform: translate(-50%, -50%);
-    background-image: url("../img/map-pin.svg");
+    background-image: url("../img/background/map-pin.svg");
     width: 38px;
     height: 50px;
   }

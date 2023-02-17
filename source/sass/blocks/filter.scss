@@ -88,7 +88,7 @@
 }
 
 .filter__item {
-  width: max-content;
+  width: fit-content;
   margin: 0 0 0 -10px;
   padding: 11px;
 
@@ -189,21 +189,21 @@
   &:checked:disabled {
     & + .filter__radio-mark {
       border-color: $color-gainsboro;
+    }
 
-      &::before {
-        display: block;
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
+    & + .filter__radio-mark::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
 
-        width: 16px;
-        height: 16px;
+      width: 16px;
+      height: 16px;
 
-        background-color: $color-gainsboro;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-      }
+      background-color: $color-gainsboro;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
@@ -252,11 +252,11 @@
       cursor: default;
       border-color: $color-gainsboro;
       background-color: $color-gainsboro;
+    }
 
-      &::after {
-        cursor: default;
-        background-color: $color-white-smoke;
-      }
+    & + .filter__checkbox-mark::after {
+      cursor: default;
+      background-color: $color-white-smoke;
     }
 
     & + .filter__checkbox-mark + .filter__checkbox-text {
@@ -281,11 +281,11 @@
     & + .filter__checkbox-mark {
       border-color: $color-gainsboro;
       background-color: $color-gainsboro;
+    }
 
-      &::after {
-        cursor: default;
-        background-color: $color-silver;
-      }
+    & + .filter__checkbox-mark::after {
+      cursor: default;
+      background-color: $color-silver;
     }
   }
 }
@@ -316,7 +316,7 @@
     padding: 11px 15px;
 
     @media (min-width: $tablet-width) {
-      width: max-content;
+      width: fit-content;
       margin: 0;
       padding: 8px 4px;
       font-size: 14px;
