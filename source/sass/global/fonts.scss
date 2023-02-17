@@ -4,8 +4,9 @@
   font-family: "Montserrat";
 
   font-display: swap;
-  src: url("../fonts/montserratregular.woff2") format("woff2"),
-  url("../fonts/montserratregular.woff") format("woff");
+  src:
+    url("../fonts/montserratregular.woff2") format("woff2"),
+    url("../fonts/montserratregular.woff") format("woff");
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   font-family: "Montserrat";
 
   font-display: swap;
-  src: url("../fonts/montserratbold.woff2") format("woff2"),
-  url("../fonts/montserratbold.woff") format("woff");
+  src:
+    url("../fonts/montserratbold.woff2") format("woff2"),
+    url("../fonts/montserratbold.woff") format("woff");
 }

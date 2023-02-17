@@ -1,8 +1,8 @@
 const map = L.map('map')
   .setView({
-    lat: 59.96831,
-    lng: 30.31748,
-  }, 18);
+    lat: 59.968388495950705,
+    lng: 30.317459106445316,
+  }, 17.5);
 
 L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -19,8 +19,8 @@ const mainPinIcon = L.icon({
 
 const mainPinMarker = L.marker(
   {
-    lat: 59.96831,
-    lng: 30.31748,
+    lat: 59.96833480047184,
+    lng: 30.317534208297733,
   },
   {
     icon: mainPinIcon,
