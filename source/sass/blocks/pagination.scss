@@ -53,19 +53,6 @@
   &:first-of-type {
     margin-left: 0;
   }
-
-  &:hover:not(&--current),
-  &:focus:not(&--current) {
-    background-color: $color-medium-purple;
-  }
-
-  &:active:not(&--current) {
-    background-color: $color-royal-purple;
-  }
-
-  &:disabled:not(&--current) {
-    background-color: $color-gainsboro;
-  }
 }
 
 .pagination__svg {
@@ -114,10 +101,21 @@
   }
 
   &:hover:not(&--current),
-  &:active:not(&--current),
-  &:focus:not(&--current),
-  &:disabled:not(&--current) {
+  &:focus:not(&--current) {
     color: $color-white;
+
+    background-color: $color-medium-purple;
+    border-radius: 4px;
+  }
+
+  &:active:not(&--current) {
+    background-color: $color-royal-purple;
+    border-radius: 4px;
+  }
+
+  &:disabled:not(&--current) {
+    background-color: $color-gainsboro;
+    border-radius: 4px;
   }
 }
 

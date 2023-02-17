@@ -31,6 +31,9 @@
 
     color: $color-slate-blue;
 
+    background-color: $color-transparent;
+    border: none;
+
     &::after {
       font-size: 20px;
     }
@@ -85,6 +88,8 @@
 
       display: block;
 
+      background-color: $color-transparent;
+      border: none;
       transform: translateX(-50%);
     }
   }

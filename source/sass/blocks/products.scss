@@ -49,6 +49,23 @@
 .products__item-link {
   color: $color-night-rider;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    @media (min-width: $desktop-width) {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+
+    @media (min-width: $desktop-width) {
+      opacity: 1;
+    }
+  }
 }
 
 .products__image {

@@ -24,7 +24,7 @@
 
     <!-- Шапка -->
 
-    <header class="header no-js container">
+    <header class="header no-js container"><!-- При открытии меню класс no-js заменяется на is-open -->
       <div class="header__logo-container">
         <a class="header__logo-link" href="#" aria-label="Переход на главную страницу.">
           <picture>
@@ -155,9 +155,9 @@
               </div>
             </li>
           </ul>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
+          <button class="swiper-button-prev" type="button"></button>
+          <button class="swiper-button-next" type="button"></button>
+          <button class="swiper-pagination" type="button"></button>
         </div>
 
 
@@ -210,11 +210,11 @@
                     </div>
                     <div class="slider__values-container">
                       <label class="slider__values">
-                        <input id="min" type="number" min="0" name="min-price" placeholder="0">
+                        <input id="min" type="number" min="0" name="min-price" placeholder="0" required>
                         <span class="visually-hidden">Минимальная цена</span>
                       </label>
                       <label class="slider__values">
-                        <input id="max" type="number" max="1000" name="max-price" placeholder="900">
+                        <input id="max" type="number" max="1000" name="max-price" placeholder="900" required>
                         <span class="visually-hidden">Максимальная цена</span>
                       </label>
                     </div>
@@ -549,6 +549,6 @@
     <script src="./js/swiper.js" defer></script>
     <script src="./js/slider.js" defer></script>
     <script src="./js/map.js" defer></script>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/toggle.js" defer></script>
   </body>
 </html>
