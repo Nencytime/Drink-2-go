@@ -2,15 +2,18 @@
   position: absolute;
   top: 0;
   right: 60px;
+
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     position: static;
-    justify-content: start;
+
     flex-wrap: wrap;
+    justify-content: start;
     margin-right: 7px;
   }
 
@@ -38,24 +41,27 @@
 
   @media (min-width: $desktop-width) {
     display: table-cell;
+
     vertical-align: middle;
   }
 }
 
 .account__link {
   position: relative;
+
   display: flex;
-  color: $color-night-rider;
-  text-decoration: none;
+  padding: 22px;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+  color: $color-night-rider;
   text-transform: uppercase;
-  padding: 22px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 22px 28px;
     display: inline;
+    padding: 36px 22px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,8 +97,9 @@
 .account__svg {
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 20px;
     top: 50%;
+    left: 20px;
+
     transform: translateY(-50%);
   }
 }

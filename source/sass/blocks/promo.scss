@@ -47,9 +47,9 @@
 }
 
 .promo__image-container {
-  margin-bottom: 5px;
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -76,30 +76,33 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
-    margin: 8px 0 0 30px;
-    text-align: start;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 49%;
+    margin: 8px 0 0 30px;
+
+    text-align: start;
   }
 }
 
 .promo__badge {
+  display: block;
+  margin: 0 0 4px;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   text-align: inherit;
-  text-transform: uppercase;
   color: $color-slate-blue;
-  display: block;
-  margin: 0 0 4px;
+  text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 
 .promo__title {
-  padding: 0;
   margin: 0 0 10px;
+  padding: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -107,15 +110,17 @@
   letter-spacing: 0.02em;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 16px;
+
     font-size: 56px;
     line-height: 80px;
-    margin: 0 0 16px;
   }
 }
 
 .promo__description {
-  padding: 0;
   margin: 0 0 20px;
+  padding: 0;
+
   font-size: 14px;
   line-height: 20px;
   text-align: inherit;
@@ -133,15 +138,17 @@
 .promo__old-price {
   font-size: 16px;
   line-height: 32px;
-  text-decoration-line: line-through;
   color: $color-slate-blue;
+
+  text-decoration-line: line-through;
 }
 
 .promo__new-price {
+  margin-left: 6px;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
-  margin-left: 6px;
 }
 
 .promo__button-container {
@@ -160,6 +167,7 @@
 
   & .promo__button {
     margin-left: 20px;
+
     font-size: 16px;
   }
 }

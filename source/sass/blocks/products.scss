@@ -5,38 +5,42 @@
 }
 
 .products__list {
-  padding: 0 0 20px;
   margin: 0;
+  padding: 0 0 20px;
+
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
     padding-bottom: 70px;
+
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 61px;
+
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 .products__item {
-  padding: 20px;
-  background-color: $color-white;
   margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding: 30px;
     margin-bottom: 0;
+    padding: 30px;
   }
 
   @media (min-width: $desktop-width) {
     &:hover,
     &:focus {
-      box-shadow: 0 5px 15px rgba($color-black, 0.15);
       border-radius: 4px;
+      box-shadow: 0 5px 15px rgba($color-black, 0.15);
       cursor: pointer;
     }
   }
@@ -57,16 +61,18 @@
 }
 
 .products__title {
+  margin: 0 0 4px;
+  padding: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
-  padding: 0;
-  margin: 0 0 4px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 10px;
+
     font-size: 24px;
     line-height: 36px;
-    margin: 0 0 10px;
   }
 }
 
@@ -85,8 +91,10 @@
   align-items: center;
 
   & .products__button {
-    padding: 9px 20px 9px 46px;
     position: relative;
+
+    padding: 9px 20px 9px 46px;
+
     line-height: 20px;
 
     @media (min-width: $tablet-width) {
@@ -94,12 +102,14 @@
     }
 
     &::before {
-      position: absolute;
       content: "";
-      width: 20px;
-      height: 16px;
+      position: absolute;
       top: 50%;
       left: 20px;
+
+      width: 20px;
+      height: 16px;
+
       background-image: url("../img/icons/basket.svg");
       transform: translateY(-50%);
     }
@@ -107,10 +117,11 @@
 }
 
 .products__price {
+  margin-left: -2px;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
-  margin-left: -2px;
 }
 
 .producrs__sorting {
@@ -120,8 +131,8 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
     justify-content: flex-end;
+    margin-bottom: 26px;
   }
 }
 
@@ -133,22 +144,24 @@
 
 .producrs__sorting-select {
   display: block;
-  border: none;
-  font-family: $ff-montserrat;
+  max-width: 170px;
+  margin: 0;
+  padding: 4px 12px;
+
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  padding: 4px 12px;
+  font-family: $ff-montserrat;
   color: $color-slate-blue;
+
   background-color: $color-transparent;
-  max-width: 170px;
-  margin: 0;
+  border: none;
   border-radius: none;
 
   @media (min-width: $tablet-width) {
-    margin-left: 2px;
     margin-right: 3px;
+    margin-left: 2px;
   }
 
   &:hover {

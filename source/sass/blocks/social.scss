@@ -6,8 +6,8 @@
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     margin-bottom: 28px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,12 +24,14 @@
 }
 
 .social__list {
-  padding: 0;
-  margin: 0 5px 0 0;
-  list-style-type: none;
   display: grid;
-  grid-template-columns: 40px 40px 40px;
+  margin: 0 5px 0 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 20px;
+  grid-template-columns: 40px 40px 40px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -42,6 +44,7 @@
 
 .social__link {
   padding: 15px 10px 5px;
+
   border-radius: 4px;
 
   @media (min-width: $desktop-width) {
@@ -85,9 +88,9 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    margin-top: 5px;
     display: block;
     width: fit-content;
+    margin-top: 5px;
   }
 }
 

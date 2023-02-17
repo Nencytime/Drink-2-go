@@ -21,9 +21,10 @@
 }
 
 .filter__fieldset {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 .filter__price {
@@ -61,10 +62,11 @@
 }
 
 .filter__list {
-  padding: 0;
   margin: 0;
-  list-style-type: none;
   margin-bottom: 9px;
+  padding: 0;
+
+  list-style-type: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -76,11 +78,12 @@
 }
 
 .filter__title {
+  margin: 0 0 12px;
+  padding: 0;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  padding: 0;
-  margin: 0 0 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 8px;
@@ -111,7 +114,9 @@
 
 .filter__label {
   position: relative;
+
   display: block;
+
   cursor: pointer;
 }
 
@@ -128,8 +133,10 @@
   position: absolute;
   top: -1px;
   left: 0;
+
   width: 24px;
   height: 24px;
+
   background-color: $color-white;
   border: 2px solid $color-silver;
   border-radius: 50%;
@@ -158,9 +165,10 @@
   &:disabled {
     & + .filter__radio-mark,
     & + .filter__radio-mark + .filter__radio-text {
+      color: $color-gainsboro;
+
       border-color: $color-gainsboro;
       cursor: default;
-      color: $color-gainsboro;
     }
 
     & + .filter__radio-mark::before {
@@ -192,12 +200,12 @@
     }
 
     & + .filter__radio-mark::before {
-      display: block;
       content: "";
       position: absolute;
       top: 50%;
       left: 50%;
 
+      display: block;
       width: 16px;
       height: 16px;
 
@@ -216,20 +224,24 @@
   position: absolute;
   top: -1px;
   left: 0;
+  z-index: 1;
+
   width: 42px;
   height: 24px;
+
   background-color: $color-silver;
   border-radius: 12px;
-  z-index: 1;
 
   &::after {
     content: "";
     position: absolute;
-    z-index: 2;
     top: 2px;
     left: 2px;
+    z-index: 2;
+
     width: 20px;
     height: 20px;
+
     background-color: $color-white;
     border-radius: 50%;
   }
@@ -238,8 +250,8 @@
 .filter__checkbox-input {
   &:hover + .filter__checkbox-mark,
   &:focus + .filter__checkbox-mark {
-    border: 2px solid $color-medium-purple;
     background-color: rgba($color-medium-purple, 0.25);
+    border: 2px solid $color-medium-purple;
 
     &::after {
       top: 0;
@@ -249,19 +261,20 @@
 
   &:disabled {
     & + .filter__checkbox-mark {
-      cursor: default;
-      border-color: $color-gainsboro;
       background-color: $color-gainsboro;
+      border-color: $color-gainsboro;
+      cursor: default;
     }
 
     & + .filter__checkbox-mark::after {
-      cursor: default;
       background-color: $color-white-smoke;
+      cursor: default;
     }
 
     & + .filter__checkbox-mark + .filter__checkbox-text {
-      cursor: default;
       color: $color-silver;
+
+      cursor: default;
     }
   }
 
@@ -272,53 +285,58 @@
     }
 
     & + .filter__checkbox-mark {
-      border: none;
       background-color: $color-slate-blue;
+      border: none;
     }
   }
 
   &:checked:disabled {
     & + .filter__checkbox-mark {
-      border-color: $color-gainsboro;
       background-color: $color-gainsboro;
+      border-color: $color-gainsboro;
     }
 
     & + .filter__checkbox-mark::after {
-      cursor: default;
       background-color: $color-silver;
+      cursor: default;
     }
   }
 }
 
 .filter__button-container {
   display: grid;
+
+  gap: 24px;
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr;
-  gap: 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-    gap: 30px;
     margin-left: -56px;
+
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 18px;
     margin-left: 0;
+
+    gap: 18px;
   }
 
   & .filter__button {
+    margin: 0 auto;
+    padding: 11px 15px;
+
     font-size: 13px;
     line-height: 24px;
     text-align: center;
-    margin: 0 auto;
-    padding: 11px 15px;
 
     @media (min-width: $tablet-width) {
       width: fit-content;
       margin: 0;
       padding: 8px 4px;
+
       font-size: 14px;
     }
 
@@ -330,7 +348,8 @@
 
   & .button--additional {
     font-size: 14px;
-    background: $color-white;
     color: $color-slate-blue;
+
+    background: $color-white;
   }
 }

@@ -8,14 +8,16 @@
   }
 
   & .noUi-connect {
-    background-color: $color-medium-purple;
     height: 4px;
+
+    background-color: $color-medium-purple;
   }
 
   & .noUi-connects {
-    height: 2px;
-    background-color: $color-gainsboro;
     width: calc(100% + 24px);
+    height: 2px;
+
+    background-color: $color-gainsboro;
   }
 
   & .noUi-base {
@@ -23,15 +25,15 @@
   }
 
   & .noUi-target {
-    border: none;
     background-color: $color-transparent;
+    border: none;
     box-shadow: none;
   }
 
   & .noUi-handle {
+    background-color: $color-white;
     border: 2px solid $color-medium-purple;
     border-radius: 50%;
-    background-color: $color-white;
     box-shadow: none;
 
     &::before {
@@ -39,21 +41,23 @@
     }
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 2px;
       left: 2px;
+
       width: 16px;
       height: 16px;
-      border-radius: 50%;
+
       background-color: $color-transparent;
+      border-radius: 50%;
     }
 
     &:hover::after,
     &:focus::after {
       background-color: rgba($color-slate-blue, 0.25);
-      cursor: pointer;
       outline: none;
+      cursor: pointer;
     }
 
     &:active::after {
@@ -65,17 +69,19 @@
     }
 
     &:disabled::after {
-      cursor: default;
       display: none;
+
+      cursor: default;
     }
   }
 
   & .noUi-horizontal .noUi-handle-upper,
   & .noUi-horizontal .noUi-handle-lower {
+    top: -12px;
+    right: -24px;
+
     width: 24px;
     height: 24px;
-    right: -24px;
-    top: -12px;
   }
 
   & .noUi-horizontal .noUi-handle-upper {
@@ -103,7 +109,9 @@
 
 .slider__values-container {
   position: relative;
+
   display: flex;
+
   gap: 44px;
 
   @media (min-width: $tablet-width) {
@@ -115,12 +123,14 @@
   }
 
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 50%;
     left: 50%;
-    height: 2px;
+
     width: 9px;
+    height: 2px;
+
     background-color: $color-silver;
     transform: translate(-50%, -50%);
   }
@@ -128,16 +138,19 @@
   & input {
     width: 100%;
     height: 38px;
-    border-radius: 4px;
-    text-align: center;
-    font-family: $ff-montserrat;
-    border: 2px solid $color-medium-purple;
+    padding: 5px 15px 5px 15px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    appearance: none;
-    padding: 5px 15px 5px 15px;
+    font-family: $ff-montserrat;
+    text-align: center;
     color: $color-black;
+
+    border: 2px solid $color-medium-purple;
+    border-radius: 4px;
+
+    appearance: none;
 
     @media (min-width: $tablet-width) {
       height: 40px;
@@ -146,15 +159,17 @@
 
     &:hover,
     &:focus {
+      color: $color-black;
+
       border: 2px solid $color-royal-purple;
       outline: none;
-      color: $color-black;
     }
 
     &:disabled {
+      color: $color-silver;
+
       border: 2px solid $color-gainsboro;
       cursor: default;
-      color: $color-silver;
     }
   }
 }
