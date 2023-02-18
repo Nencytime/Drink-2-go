@@ -53,6 +53,19 @@
   &:first-of-type {
     margin-left: 0;
   }
+
+  &:hover:not(&--current),
+  &:focus:not(&--current) {
+    background-color: $color-medium-purple;
+  }
+
+  &:active:not(&--current) {
+    background-color: $color-royal-purple;
+  }
+
+  &:disabled:not(&--current) {
+    background-color: $color-gainsboro;
+  }
 }
 
 .pagination__svg {
